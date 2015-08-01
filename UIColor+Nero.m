@@ -2,7 +2,7 @@
 //  UIColor+Nero.m
 //  NeroCampusBulletinBoard
 //
-//  Created by 谭峻强 on 15/8/1.
+//  Created by Nero on 15/8/1.
 //  Copyright (c) 2015年 TanJunqiang. All rights reserved.
 //
 
