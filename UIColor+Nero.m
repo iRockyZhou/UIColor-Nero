@@ -76,4 +76,30 @@
     return [self colorWithSixteenColorNumber:colorNum alpha:1.0f];
 }
 
+/**
+ *  获得随机色(可透明)
+ *
+ *  @return Class: UIColor
+ */
++ (UIColor *)randomColor {
+    CGFloat red = (CGFloat)arc4random() / (CGFloat)ARC4RANDOM_MAX;
+    CGFloat blue = (CGFloat)arc4random() / (CGFloat)ARC4RANDOM_MAX;
+    CGFloat green = (CGFloat)arc4random() / (CGFloat)ARC4RANDOM_MAX;
+    return [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+}
+
+/**
+ *  获得随机色(可透明)
+ *
+ *  @param alpha 不透明度
+ *
+ *  @return Class: UIColor
+ */
++ (UIColor *)randomColorWithAlpha:(CGFloat)alpha {
+    CGFloat red = (CGFloat)arc4random() / (CGFloat)ARC4RANDOM_MAX;
+    CGFloat blue = (CGFloat)arc4random() / (CGFloat)ARC4RANDOM_MAX;
+    CGFloat green = (CGFloat)arc4random() / (CGFloat)ARC4RANDOM_MAX;
+    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+}
+
 @end
